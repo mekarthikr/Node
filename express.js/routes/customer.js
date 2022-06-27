@@ -1,5 +1,5 @@
-const home=(req,res)=>{
-    res.send("res home")
-    }
-    
-    exports.home=home;
+const home = (req, res) => {
+  res.send("res home");
+};
+
+exports.home = home;
