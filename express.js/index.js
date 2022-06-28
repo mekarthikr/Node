@@ -7,14 +7,14 @@ const { get } = require("express/lib/response");
 const app = express();
 
 app.use(express.static("./asset"));
-
-app.get("/", home.index);
-app.use("/", (req, res, next) => {
+app.use("/", (req, res) => {
   console.log("LOGGED");
   // throw new Error('Error is thrown')
   
   // next("error");
 });
+app.get("/", home.index);
+
 
 // app.get('/', (req, res) => {
 //   res.send('Hello World!')
